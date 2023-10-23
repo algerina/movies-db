@@ -5,11 +5,11 @@ const API_BASE_URL = "https://api.themoviedb.org/3";
 
 const client = axios.create({
   baseURL: API_BASE_URL,
-  params: { api_key: API_key },
+  params: { api_key: API_key }
 });
 
 export const searchMovies = async{query: string} => {
-  try{
+  try {
     const response = await client.get("/search/movie", {
       params: {query},
     });

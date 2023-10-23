@@ -26,6 +26,12 @@ const SearchBar = (onSearch: SearchBarProps) => {
         value={query}
         onChange={handleChange}
       />
+      <button
+        type="submit"
+        className="bg-red-600 text-white py-2 px-6 rounded-r hover:bg-blue-600 focus:outline-none"
+      >
+        Search
+      </button>
     </form>
   );
 };
